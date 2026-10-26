@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pata Feliz | Banho, tosa e carinho para o seu pet</title>
+  <meta name="description" content="Pata Feliz: banho, tosa e cuidados com a pelagem para cães e gatos, com atenção individual. Solicite seu agendamento pelo WhatsApp. (Site de demonstração)">
+  <meta name="theme-color" content="#F58A2E">
+
+  <!-- Marca a página como "com JavaScript" antes de desenhar, para as animações de entrada não piscarem -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Fontes arredondadas (Google Fonts). Se quiser zero dependências externas, remova estas 3 linhas: o CSS tem fontes de reserva. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ============ A. CABEÇALHO ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Pata Feliz, ir para o início">
+        <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="32" fill="currentColor"/>
+          <g fill="#fff">
+            <ellipse cx="32" cy="42" rx="11" ry="9"/>
+            <ellipse cx="17" cy="31" rx="5" ry="6.5" transform="rotate(-20 17 31)"/>
+            <ellipse cx="27" cy="21" rx="5" ry="6.5" transform="rotate(-6 27 21)"/>
+            <ellipse cx="38" cy="21" rx="5" ry="6.5" transform="rotate(6 38 21)"/>
+            <ellipse cx="48" cy="31" rx="5" ry="6.5" transform="rotate(20 48 31)"/>
+          </g>
+        </svg>
+        <span>Pata Feliz</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small" href="#agendamento">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ B. HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Pet shop · Banho, tosa e cuidados</p>
+          <h1 id="hero-titulo">Seu melhor amigo merece <span class="highlight">um dia feliz</span>.</h1>
+          <p class="lead">
+            Na Pata Feliz, cada cão e cada gato é recebido com paciência, produtos
+            adequados e atenção individual. Você escolhe o serviço, a gente cuida do resto
+            com muito carinho.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#agendamento">Agendar um serviço</a>
+            <a class="btn btn-ghost" href="#servicos">Conhecer os serviços</a>
+          </div>
+          <ul class="hero-points" aria-label="Destaques">
+            <li>Cães e gatos</li>
+            <li>Atendimento com hora marcada</li>
+            <li>Pedido pelo WhatsApp</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-blob" aria-hidden="true"></div>
+          <img class="hero-photo"
+               src="https://images.unsplash.com/photo-1768084368558-0c4f68278309?fm=jpg&q=75&w=900&auto=format&fit=crop"
+               alt="Cão golden retriever correndo feliz por um campo de grama"
+               width="900" height="1000" fetchpriority="high">
+          <figure class="hero-cat">
+            <img src="https://images.unsplash.com/photo-1751001732076-3935f74bcacf?fm=jpg&q=75&w=400&auto=format&fit=crop"
+                 alt="Gato de olhos amarelos olhando para a câmera"
+                 width="400" height="400">
+          </figure>
+          <svg class="deco deco-paw" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="currentColor">
+              <ellipse cx="32" cy="42" rx="11" ry="9"/>
+              <ellipse cx="17" cy="31" rx="5" ry="6.5" transform="rotate(-20 17 31)"/>
+              <ellipse cx="27" cy="21" rx="5" ry="6.5" transform="rotate(-6 27 21)"/>
+              <ellipse cx="38" cy="21" rx="5" ry="6.5" transform="rotate(6 38 21)"/>
+              <ellipse cx="48" cy="31" rx="5" ry="6.5" transform="rotate(20 48 31)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ C. SERVIÇOS ============ -->
+    <section class="section" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Nossos serviços</p>
+          <h2 id="servicos-titulo">Cuidado completo, do banho ao carinho extra</h2>
+          <p>Escolha o serviço e envie sua solicitação em poucos cliques. A equipe confirma a disponibilidade com você pelo WhatsApp.</p>
+        </header>
+
+        <!-- Para editar: troque título, descrição e preço dentro de cada <article>. -->
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 6c6 8 12 14 12 22a12 12 0 0 1-24 0C12 20 18 14 24 6z" fill="currentColor"/></svg>
+            </div>
+            <h3>Banho</h3>
+            <p>Banho com produtos suaves, secagem cuidadosa e perfume leve. Ideal para manter a pelagem limpa e a pele saudável.</p>
+            <p class="price"><span>a partir de</span> R$ 50 <small>valor ilustrativo</small></p>
+            <button class="btn btn-outline" type="button" data-service="Banho">Agendar banho</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="13" cy="35" r="6"/><circle cx="13" cy="13" r="6"/><path d="M18 17l22 20M18 31L40 11"/></g></svg>
+            </div>
+            <h3>Tosa</h3>
+            <p>Tosa higiênica ou completa, feita no ritmo do seu pet e do jeito que você pedir, com acabamento caprichado.</p>
+            <p class="price"><span>a partir de</span> R$ 70 <small>valor ilustrativo</small></p>
+            <button class="btn btn-outline" type="button" data-service="Tosa">Agendar tosa</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 42S6 31 6 18a9 9 0 0 1 18-3 9 9 0 0 1 18 3c0 13-18 24-18 24z" fill="currentColor"/></svg>
+            </div>
+            <h3>Hidratação e pelagem</h3>
+            <p>Tratamento para pelos macios, brilhantes e sem nós, com atenção especial a raças de pelo longo ou ressecado.</p>
+            <p class="price"><span>a partir de</span> R$ 40 <small>valor ilustrativo</small></p>
+            <button class="btn btn-outline" type="button" data-service="Hidratação e cuidados com a pelagem">Agendar hidratação</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 4l5.5 12.5L43 18l-10 9.5L35.5 41 24 34l-11.5 7L15 27.5 5 18l13.5-1.5L24 4z" fill="currentColor"/></svg>
+            </div>
+            <h3>Cuidados especiais</h3>
+            <p>Para pets idosos, ansiosos ou sensíveis: atendimento mais calmo, com pausas e adaptação ao jeitinho de cada um.</p>
+            <p class="price"><span>a partir de</span> R$ 60 <small>valor ilustrativo</small></p>
+            <button class="btn btn-outline" type="button" data-service="Cuidados especiais para pets">Agendar atendimento</button>
+          </article>
+        </div>
+        <p class="note">Serviços e valores desta página são fictícios, criados para demonstração.</p>
+      </div>
+    </section>
+
+    <!-- ============ D. GALERIA ============ -->
+    <section class="section section-cream" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Galeria</p>
+          <h2 id="galeria-titulo">Carinhas que fazem o nosso dia</h2>
+          <p>Clique em uma foto para ampliar.</p>
+        </header>
+
+        <!-- Para trocar uma foto: altere src (miniatura), data-full (versão grande) e o texto alt. -->
+        <ul class="gallery" id="galeria-grade">
+          <li>
+            <button type="button" class="gallery-item" data-full="https://images.unsplash.com/photo-1601543574606-1d8a714787f9?fm=jpg&q=80&w=1600&auto=format&fit=crop">
+              <img src="https://images.unsplash.com/photo-1601543574606-1d8a714787f9?fm=jpg&q=70&w=600&h=600&auto=format&fit=crop"
+                   alt="Golden retriever deitado ao ar livre, descansando em um dia de sol" width="600" height="600" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="https://images.unsplash.com/photo-1684261783027-f8256e349174?fm=jpg&q=80&w=1600&auto=format&fit=crop">
+              <img src="https://images.unsplash.com/photo-1684261783027-f8256e349174?fm=jpg&q=70&w=600&h=600&auto=format&fit=crop"
+                   alt="Gato cinza deitado sobre um cobertor branco" width="600" height="600" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="https://images.unsplash.com/photo-1730019816520-5686aa34cf75?fm=jpg&q=80&w=1600&auto=format&fit=crop">
+              <img src="https://images.unsplash.com/photo-1730019816520-5686aa34cf75?fm=jpg&q=70&w=600&h=600&auto=format&fit=crop"
+                   alt="Cão deitado na grama com a língua para fora" width="600" height="600" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="https://images.unsplash.com/photo-1592652426510-21aa54446dda?fm=jpg&q=80&w=1600&auto=format&fit=crop">
+              <img src="https://images.unsplash.com/photo-1592652426510-21aa54446dda?fm=jpg&q=70&w=600&h=600&auto=format&fit=crop"
+                   alt="Gato marrom e branco em frente a um fundo preto" width="600" height="600" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="https://images.unsplash.com/photo-1751001732076-3935f74bcacf?fm=jpg&q=80&w=1600&auto=format&fit=crop">
+              <img src="https://images.unsplash.com/photo-1751001732076-3935f74bcacf?fm=jpg&q=70&w=600&h=600&auto=format&fit=crop"
+                   alt="Gato de olhos amarelos com olhar atento" width="600" height="600" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-item" data-full="https://images.unsplash.com/photo-1768084368558-0c4f68278309?fm=jpg&q=80&w=1600&auto=format&fit=crop">
+              <img src="https://images.unsplash.com/photo-1768084368558-0c4f68278309?fm=jpg&q=70&w=600&h=600&auto=format&fit=crop"
+                   alt="Golden retriever correndo por um campo de grama" width="600" height="600" loading="lazy">
+            </button>
+          </li>
+        </ul>
+        <p class="note">Fotos ilustrativas de bancos de imagens gratuitos (Unsplash).</p>
+      </div>
+    </section>
+
+    <!-- Janela de ampliação (elemento <dialog> nativo: Esc fecha, foco é gerenciado pelo navegador) -->
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Fechar foto">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Foto anterior">&#8249;</button>
+      <figure>
+        <img id="lightbox-img" src="" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Próxima foto">&#8250;</button>
+    </dialog>
+
+    <!-- ============ E. DIFERENCIAIS ============ -->
+    <section class="section" id="diferenciais" aria-labelledby="dif-titulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Por que a Pata Feliz</p>
+          <h2 id="dif-titulo">Um cuidado pensado para o seu pet se sentir em casa</h2>
+        </header>
+
+        <div class="features">
+          <div class="feature reveal">
+            <span class="feature-num" aria-hidden="true">01</span>
+            <h3>Carinho e atenção individual</h3>
+            <p>Cada pet é atendido com calma, sem pressa e respeitando o seu temperamento.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-num" aria-hidden="true">02</span>
+            <h3>Higiene e organização</h3>
+            <p>Espaço limpo, materiais higienizados entre um atendimento e outro e horários organizados.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-num" aria-hidden="true">03</span>
+            <h3>Profissionais dedicados</h3>
+            <p>Uma equipe que gosta de bicho e conversa com você sobre o que o seu pet precisa.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-num" aria-hidden="true">04</span>
+            <h3>Ambiente acolhedor</h3>
+            <p>Um lugar tranquilo, pensado para deixar cães e gatos mais confortáveis durante o atendimento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ F. AGENDAMENTO ============ -->
+    <section class="section section-teal" id="agendamento" aria-labelledby="agenda-titulo">
+      <div class="container booking">
+        <div class="booking-intro reveal">
+          <p class="eyebrow eyebrow-light">Agendamento</p>
+          <h2 id="agenda-titulo">Peça o horário do seu pet</h2>
+          <p>
+            Preencha os dados ao lado e revise o resumo. Depois, abriremos o WhatsApp com a mensagem
+            pronta para você enviar.
+          </p>
+          <p class="booking-warning">
+            <strong>Importante:</strong> este formulário apenas envia uma <em>solicitação</em>.
+            O horário só vale depois que a equipe confirmar com você pelo WhatsApp.
+          </p>
+        </div>
+
+        <form class="form reveal" id="form-agendamento" novalidate>
+          <p class="form-hint"><span class="req" aria-hidden="true">*</span> Campos obrigatórios</p>
+
+          <div class="field">
+            <label for="responsavel">Nome do responsável <span class="req" aria-hidden="true">*</span></label>
+            <input id="responsavel" name="responsavel" type="text" autocomplete="name" required aria-describedby="erro-responsavel">
+            <p class="error" id="erro-responsavel" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="telefone">Telefone ou WhatsApp <span class="req" aria-hidden="true">*</span></label>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 91234-5678" required aria-describedby="erro-telefone">
+            <p class="error" id="erro-telefone" role="alert"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="pet">Nome do pet <span class="req" aria-hidden="true">*</span></label>
+              <input id="pet" name="pet" type="text" required aria-describedby="erro-pet">
+              <p class="error" id="erro-pet" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="tipo">Tipo de animal <span class="req" aria-hidden="true">*</span></label>
+              <select id="tipo" name="tipo" required aria-describedby="erro-tipo">
+                <option value="">Selecione</option>
+                <option>Cachorro</option>
+                <option>Gato</option>
+                <option>Outro</option>
+              </select>
+              <p class="error" id="erro-tipo" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="servico">Serviço desejado <span class="req" aria-hidden="true">*</span></label>
+            <select id="servico" name="servico" required aria-describedby="erro-servico">
+              <option value="">Selecione</option>
+              <option>Banho</option>
+              <option>Tosa</option>
+              <option>Hidratação e cuidados com a pelagem</option>
+              <option>Cuidados especiais para pets</option>
+            </select>
+            <p class="error" id="erro-servico" role="alert"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="data">Data pretendida <span class="req" aria-hidden="true">*</span></label>
+              <input id="data" name="data" type="date" required aria-describedby="erro-data">
+              <p class="error" id="erro-data" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="horario">Horário pretendido <span class="req" aria-hidden="true">*</span></label>
+              <select id="horario" name="horario" required aria-describedby="erro-horario">
+                <option value="">Selecione</option>
+                <option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option>
+                <option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+              </select>
+              <p class="error" id="erro-horario" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="obs">Observações <span class="optional">(opcional)</span></label>
+            <textarea id="obs" name="obs" rows="3" maxlength="400" placeholder="Ex.: meu pet tem medo de secador, alergia a algum produto..."></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Revisar solicitação</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Janela de confirmação antes de abrir o WhatsApp -->
+    <dialog class="confirm" id="confirmacao" aria-labelledby="confirm-titulo">
+      <h2 id="confirm-titulo">Revise sua solicitação</h2>
+      <p>Ao continuar, vamos abrir o WhatsApp com esta mensagem pronta. <strong>Você precisa enviá-la por lá</strong>. Nenhum horário foi reservado ainda.</p>
+      <dl class="summary" id="confirm-resumo"></dl>
+      <p class="demo-alert" id="confirm-demo" hidden>Modo demonstração: o número de WhatsApp ainda não foi configurado em <code>script.js</code>.</p>
+      <div class="confirm-actions">
+        <button class="btn btn-ghost" type="button" id="confirm-voltar">Voltar e editar</button>
+        <button class="btn btn-primary" type="button" id="confirm-enviar">Abrir WhatsApp</button>
+      </div>
+    </dialog>
+
+    <!-- ============ G. CONTATO ============ -->
+    <section class="section" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contact">
+        <div class="reveal">
+          <p class="eyebrow">Contato</p>
+          <h2 id="contato-titulo">Vamos conversar?</h2>
+          <p>Tire dúvidas, peça um orçamento ou combine o melhor dia para o seu pet pelo WhatsApp.</p>
+          <a class="btn btn-whatsapp" href="#" data-whatsapp-link>Chamar no WhatsApp</a>
+        </div>
+
+        <div class="contact-cards">
+          <div class="info reveal">
+            <h3>Endereço <span class="tag">fictício</span></h3>
+            <p>Rua das Patinhas, 123<br>Bairro Exemplo · Cidade Fictícia/UF</p>
+          </div>
+          <div class="info reveal">
+            <h3>Horários <span class="tag">ilustrativos</span></h3>
+            <p>Segunda a sexta: 8h às 18h<br>Sábado: 8h às 14h<br>Domingo: fechado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Pata Feliz</p>
+        <p>Banho, tosa e carinho para cães e gatos.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-title">Redes sociais <span class="tag tag-light">demonstrativo</span></p>
+        <ul class="social">
+          <li><a href="#" data-demo>Instagram</a></li>
+          <li><a href="#" data-demo>Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">Pata Feliz é um negócio fictício. Site de demonstração: endereço, preços, horários e redes sociais são exemplos.</p>
+  </footer>
+</body>
+</html>
